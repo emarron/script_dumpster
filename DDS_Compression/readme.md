@@ -1,6 +1,7 @@
 ## Recursive DDS compression/conversion.
 
  Not super fast, but gets the job done.
+ 
 Requires [NVidia Texture Tools Standalone](https://developer.nvidia.com/nvidia-texture-tools-exporter) to be in the same folder as scripts (or the folder the command is being executed.)
 
 
@@ -16,6 +17,7 @@ Requires [NVidia Texture Tools Standalone](https://developer.nvidia.com/nvidia-t
     bash file.bash folder 'reg_ex name search'
 
 folder = your folder, e.g. cat
+
 reg_ex name search = name of files you want to process, e.g. '*_d.tga' would process all files that end in "_d.tga"
 
 **EXAMPLE:**
@@ -30,7 +32,9 @@ reg_ex name search = name of files you want to process, e.g. '*_d.tga' would pro
 DDS_compressor.bat folder 'reg_ex name search' compression
 
 folder = folder to process
+
 reg_ex name search = name of files you want to process, e.g. '*_d.tga' would process all files that end in "_d.tga"
+
 compression = NVidia Texture Tools Exporter Standalone compression number. From docs:
 
 >   -f,--format
