@@ -1,0 +1,8 @@
+useful scriptlets
+
+find . -name '$name' -exec cp --parents \{\} $target_dir/ \;
+#finds the files matching $name and copies it with structure to $target_dir. Recommend $target_dir is outside of current directory. 
+#ususally something like $target_dir = ../output
+
+find . -type d -empty -delete
+#removes empty directories
