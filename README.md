@@ -4,7 +4,7 @@ This is where I put all my scriplets.
 
 * DDS Compression uses imagemagick, Bash for Windows (Windows Subsystem for linux), and Nvidia Texture Tools Exporter.
 * File Handling using python and dupeguru.
-* ImageMagick uses imagemagick.
+* ImageMagick uses imagemagick and Bash for Windows (Windows Subsystem for linux).
 * Image Prep uses python and pillow library.
 
 
