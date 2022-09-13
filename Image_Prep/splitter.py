@@ -30,7 +30,10 @@ def save(output_folder, file_path, created_image):
 
 
 # sys.agrv is the folder selected
-folder = sys.argv[1]
+if sys.argv[1].endswith("/") or sys.argv[1].endswith("\\"):
+    folder = sys.argv[1][:-1]
+else:
+    folder = sys.argv[1]
 images = check_path('./' + folder)
 extensions = ['png', 'tga', 'jpg', 'dds']
 ignore_list = shutil.ignore_patterns(*['*.' + extension for extension in extensions])

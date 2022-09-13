@@ -1,8 +1,10 @@
 useful scriptlets
-
+bash:
 find . -name '$name' -exec cp --parents \{\} $target_dir/ \;
 #finds the files matching $name and copies it with structure to $target_dir. Recommend $target_dir is outside of current directory. 
 #ususally something like $target_dir = ../output
 
-find . -type d -empty -delete
-#removes empty directories
+
+ps:
+Get-Content -Path "$filenames_list" | Remove-Item
+#reads a list of filenames and removes them from the drive
